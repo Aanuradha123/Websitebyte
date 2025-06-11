@@ -1,0 +1,684 @@
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/browser-bar.png?1376755637
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\browser-bar.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/cf-icon-browser.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\cf-icon-browser.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/cf-icon-cloud.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\cf-icon-cloud.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/cf-icon-error.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\cf-icon-error.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/cf-icon-horizontal-arrow.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\cf-icon-horizontal-arrow.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/cf-icon-ok.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\cf-icon-ok.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/cf-icon-server.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\cf-icon-server.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/cf-no-screenshot-error.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\cf-no-screenshot-error.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/cf-no-screenshot-warn.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\cf-no-screenshot-warn.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/images/icon-exclamation.png?1376755637
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\images\icon-exclamation.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/l/email-protection
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\l\email-protection.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
+Content Type: application/javascript
+
+Uri: https://craftohtml.themezaa.com/cdn-cgi/styles/cf.errors.css
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\cdn-cgi\styles\cf.errors.css
+Content Type: text/css
+
+Uri: https://craftohtml.themezaa.com/css/icon.min.css
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css\icon.min.css
+Content Type: text/css
+
+Uri: https://craftohtml.themezaa.com/css/responsive.min.css
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css\responsive.min.css
+Content Type: text/css
+
+Uri: https://craftohtml.themezaa.com/css/style.min.css
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css\style.min.css
+Content Type: text/css
+
+Uri: https://craftohtml.themezaa.com/css/vendors.min.css
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css\vendors.min.css
+Content Type: text/css
+
+Uri: https://craftohtml.themezaa.com/about.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\about.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/blog-single-simple.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\blog-single-simple.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/compiler.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\compiler.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/contact.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\contact.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/course-detail.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\course-detail.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/courses.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\courses.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/instructors.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\instructors.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/testimonials.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\testimonials.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/index.html
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\index.html
+Content Type: text/html
+
+Uri: https://craftohtml.themezaa.com/demos/elearning/elearning.css
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\demos\elearning\elearning.css
+Content Type: text/css
+
+Uri: https://craftohtml.themezaa.com/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\bootstrap-icons.woff2
+Content Type: application/font-woff2
+
+Uri: https://craftohtml.themezaa.com/fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\bootstrap-icons.woff
+Content Type: application/font-woff
+
+Uri: https://craftohtml.themezaa.com/fonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\fa-brands-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://craftohtml.themezaa.com/fonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\fa-brands-400.woff2
+Content Type: application/font-woff2
+
+Uri: https://craftohtml.themezaa.com/fonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\fa-regular-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://craftohtml.themezaa.com/fonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\fa-regular-400.woff2
+Content Type: application/font-woff2
+
+Uri: https://craftohtml.themezaa.com/fonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\fa-solid-900.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://craftohtml.themezaa.com/fonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\fa-solid-900.woff2
+Content Type: application/font-woff2
+
+Uri: https://craftohtml.themezaa.com/fonts/fa-v4compatibility.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\fa-v4compatibility.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://craftohtml.themezaa.com/fonts/fa-v4compatibility.woff2
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\fa-v4compatibility.woff2
+Content Type: application/font-woff2
+
+Uri: https://craftohtml.themezaa.com/fonts/feather.eot?t=1525787366991
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\feather.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://craftohtml.themezaa.com/fonts/feather.svg?t=1525787366991
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\feather.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/fonts/feather.ttf?t=1525787366991
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\feather.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://craftohtml.themezaa.com/fonts/feather.woff?t=1525787366991
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\feather.woff
+Content Type: application/font-woff
+
+Uri: https://craftohtml.themezaa.com/fonts/icomoon.eot?
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\icomoon-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://craftohtml.themezaa.com/fonts/icomoon.eot?-rdmvgc
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\icomoon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://craftohtml.themezaa.com/fonts/icomoon.svg?-rdmvgc
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\icomoon.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/fonts/icomoon.ttf?-rdmvgc
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\icomoon.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://craftohtml.themezaa.com/fonts/icomoon.woff?-rdmvgc
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\icomoon.woff
+Content Type: application/font-woff
+
+Uri: https://craftohtml.themezaa.com/fonts/themify.eot?
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\themify-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://craftohtml.themezaa.com/fonts/themify.eot?-fvbane
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\themify.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://craftohtml.themezaa.com/fonts/themify.svg?-fvbane
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\themify.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/fonts/themify.ttf?-fvbane
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\themify.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://craftohtml.themezaa.com/fonts/themify.woff?-fvbane
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\fonts\themify.woff
+Content Type: application/font-woff
+
+Uri: https://craftohtml.themezaa.com/images/apple-touch-icon-114x114.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\apple-touch-icon-114x114.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/apple-touch-icon-57x57.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\apple-touch-icon-57x57.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/apple-touch-icon-72x72.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\apple-touch-icon-72x72.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/avtar-01.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-01.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-02.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-02.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-03.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-03.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-04.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-04.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-05.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-05.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-07.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-07.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-17.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-17.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-18.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-18.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-19.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-19.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-24.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-24.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-25.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-25.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-26.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-26.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-27.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-27.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-28.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-28.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-29.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-29.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/avtar-39.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\avtar-39.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/contact-form-arrow-white.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\contact-form-arrow-white.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/contact-form-down-arrow.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\contact-form-down-arrow.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-01.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-01.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-02.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-02.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-03.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-03.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-04.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-04.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-04.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-04.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-05.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-05.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-05.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-05.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-06.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-06.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-06.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-06.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-07.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-07.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-08.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-08.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-09.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-09.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/about-01.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\about-01.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/about-icon-01.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\about-icon-01.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/about-icon-02.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\about-icon-02.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/about-icon-03.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\about-icon-03.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/about-icon-04.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\about-icon-04.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/about-title-bg.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\about-title-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-bg-04.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-bg-04.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-bg-05.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-bg-05.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-bg-06.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-bg-06.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/blog-01.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-01.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-02.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-02.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-03.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-03.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-04.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-04.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-05.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-05.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-06.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-06.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-single-simple-01.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-single-simple-01.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-single-simple-02.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-single-simple-02.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-single-simple-03.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-single-simple-03.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/blog-single-simple-bg.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\blog-single-simple-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-border.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-border.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/contact-bg-01.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\contact-bg-01.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/courses-01.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\courses-01.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/courses-02.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\courses-02.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/courses-03.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\courses-03.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/courses-04.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\courses-04.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/courses-05.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\courses-05.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/courses-06.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\courses-06.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/course-detail-01.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\course-detail-01.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/course-detail-tab-01.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\course-detail-tab-01.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/course-detail-video.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\course-detail-video.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/courses-title-bg.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\courses-title-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-footer-logo.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-footer-logo.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-hero-banner-01.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-hero-banner-01.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-hero-banner-02.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-hero-banner-02.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-hero-bg.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-hero-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/instructors-title-bg.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\instructors-title-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/demo-elearning-logo-black.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\demo-elearning-logo-black.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/logoT.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\logoT.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/testimonials-title-bg.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\testimonials-title-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/testimonialss-01.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\testimonialss-01.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/testimonialss-bg.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\testimonialss-bg.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/testimonialss-icon.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\testimonialss-icon.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/favicon.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\favicon.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/logo-invision-white.svg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\logo-invision-white.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/images/logo-logitech-white.svg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\logo-logitech-white.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/images/logo-monday-white.svg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\logo-monday-white.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/images/logo-walmart-white.svg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\logo-walmart-white.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/images/logo-yahoo-white.svg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\logo-yahoo-white.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/images/marker02.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\marker02.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/mfg-close.png
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\mfg-close.png
+Content Type: image/png
+
+Uri: https://craftohtml.themezaa.com/images/team-08.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\team-08.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/team-09.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\team-09.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/team-10.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\team-10.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/team-11.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\team-11.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/team-26.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\team-26.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/team-27.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\team-27.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/team-28.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\team-28.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/team-29.jpg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\team-29.jpg
+Content Type: image/jpeg
+
+Uri: https://craftohtml.themezaa.com/images/vertical-line-bg-small.svg
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\images\vertical-line-bg-small.svg
+Content Type: image/svg+xml
+
+Uri: https://craftohtml.themezaa.com/js/jquery.js
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\js\jquery.js
+Content Type: application/javascript
+
+Uri: https://craftohtml.themezaa.com/js/main.js
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\js\main.js
+Content Type: application/javascript
+
+Uri: https://craftohtml.themezaa.com/js/vendors.min.js
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\js\vendors.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css2-4
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css2-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap);@import url(https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap);body,html{font-size:16px}footer,section{padding-top:110px;padding-bottom:110px}a,body{color:var(--medium-gray)}.btn.btn-link,.google-maps-link a:hover,.theme-demos .all-demo a,.theme-demos .buy-theme a,a,a:hover{text-decoration:none}.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl,.row>*{padding-right:15px;padding-left:15px}.blog-only-text .card-body:hover .card-title,.text-shadow-large{text-shadow:0 0 50px rgba(0,0,0,.9)}.text-outline,.text-outline-width-1px{-webkit-text-stroke-width:1px}:root{--alt-font:"Plus Jakarta Sans",sans-serif;--primary-font:"Inter",sans-serif;--base-color:
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css2-2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\css2-3
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_907NSg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\plusjakartasans\v8\LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_907NSg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0nNSg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\plusjakartasans\v8\LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0nNSg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_KUnNSg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\plusjakartasans\v8\LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_KUnNSg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_m07NSg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\plusjakartasans\v8\LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_m07NSg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU7NSg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\plusjakartasans\v8\LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU7NSg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_TknNSg.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\plusjakartasans\v8\LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_TknNSg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj42Vksj.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\spacegrotesk\v16\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj42Vksj.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\spacegrotesk\v16\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj62UUsj.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\spacegrotesk\v16\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj62UUsj.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUUsj.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\spacegrotesk\v16\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUUsj.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUsj.ttf
+File Name: C:\Downloaded Web Sites\craftohtml.themezaa.com\s\spacegrotesk\v16\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUsj.ttf
+Content Type: font/ttf
+

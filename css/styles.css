@@ -1,0 +1,15 @@
+.custom-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 75px;
+  line-height: 65px;
+  font-weigh
+System: t: 500;
+  margin-bottom: 25px;
+  letter-spacing: -2px;
+}
+
+@media (max-width: 768px) {
+  .custom-title {
+    font-size: 60px;
+  }
+}
