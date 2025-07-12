@@ -8,6 +8,7 @@
     <meta name="author" content="ThemeZaa">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Learn what Matters, Not Everything">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
@@ -22,6 +23,48 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/responsive.min.css">
     <link rel="stylesheet" href="demos/elearning/elearning.css">
+    <style>
+        .portfolio-filter {
+            white-space: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            /* Firefox */
+
+        }
+
+        .portfolio-filter::-webkit-scrollbar {
+            display: none;
+            /* Chrome/Safari */
+        }
+
+        .portfolio-filter li {
+            display: none;
+            white-space: nowrap;
+        }
+
+        .portfolio-filter li a {
+            color: brown;
+            font-weight: bold;
+        }
+
+        .portfolio-filter li:nth-child(-n+4) {
+            display: inline-block;
+        }
+
+        .portfolio-filter.show-all li {
+            display: inline-block;
+        }
+
+        .show-more-btn {
+            display: inline-block;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 24px;
+            color: #007bff;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="modern" data-mobile-nav-bg-color="#313e3b">
@@ -252,8 +295,8 @@
                     <div
                         class="d-flex align-items-center fw-500 text-dark-gray w-100 position-absolute md-position-relative bottom-0 left-minus-5px md-mt-15px">
                         <img src="images/demo-elearning-03.png" alt=""><span
-                            class="d-inline-block position-relative lh-24">Courses from <a href="#"
-                                class="fw-600 text-decoration-line-bottom text-dark-gray ">experts.</a></span>
+                            class="d-inline-block position-relative lh-24">Courses from <span href="#"
+                                class="fw-600 text-decoration-line-bottom text-dark-gray ">experts.</span></span>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7 col-md-10 offset-xl-1 position-relative mt-minus-1">
@@ -268,8 +311,9 @@
                                 <div class="feature-box-content last-paragraph-no-margin pt-30 md-pt-21 sm-pt-40px">
                                     <span class="text-dark-gray fs-20 d-inline-block fw-600 mb-5px">Classroom Module
                                         Courses</span>
-                                    <p>Bytecode Trainings offers flexible classroom module courses, promoting
-                                        self-paced learning, remote collaboration, and networking.</p>
+                                    <p>Hands-on, mentor-led learning in a structured environment.
+                                        Experience real-time collaboration, practical labs, and face-to-face guidance.
+                                    </p>
                                     <span class="w-60px h-3px bg-yellow d-inline-block"></span>
                                 </div>
                             </div>
@@ -323,17 +367,25 @@
         <div class="container">
             <div class="row align-items-center mb-4">
                 <div class="col-xl-5 lg-mb-30px text-center text-xl-start">
-                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-3px mb-0">Popular courses</h2>
+                    <h3 class="alt-font text-dark-gray fw-600 ls-minus-3px mb-0">Popular courses</h3>
                 </div>
                 <div class="col-xl-7 tab-style-04 text-center text-xl-end">
-                    <ul
+                    <!--<ul
                         class="portfolio-filter fw-500 nav nav-tabs justify-content-center justify-content-xl-end border-0">
                         <li class="nav active"><a data-filter="*" href="#">All</a></li>
-                        <li class="nav"><a data-filter=".development" href="#">Development</a></li>
-                        <!-- <li class="nav"><a data-filter=".business" href="#">Business</a></li>-->
-                        <li class="nav"><a data-filter=".design" href="#">Design</a></li>
+                        !-- <li class="nav"><a data-filter=".development" href="#">Development</a></li>
+                        <li class="nav"><a data-filter=".database" href="#">Database</a></li>
                         <li class="nav"><a data-filter=".Professional" href="#">Professional Skills</a></li>
-                    </ul>
+                        <li class="nav"><a data-filter=".cloud" href="#">Cloud</a></li>
+                        <li class="nav"><a data-filter=".testing" href="#">Testing</a></li>
+                        <li class="nav"><a data-filter=".analytics" href="#">Data & Analytics</a></li>
+                        <li class="nav"><a data-filter=".security" href="#">security</a></li>
+                        <li class="nav"><a data-filter=".others" href="#">others</a></li>--
+                    </ul>-->
+                    <a href="courses.html" class="fw-600 text-dark-gray">
+                                View all courses <i class="fa-solid fa-arrow-right ms-5px icon-very-small"></i>
+                            </a>
+
                 </div>
             </div>
             <div class="row"
@@ -341,14 +393,15 @@
                 <div class="col-12 filter-content p-md-0">
                     <ul
                         class="portfolio-wrapper grid-loading grid grid-3col xxl-grid-3col xl-grid-3col lg-grid-2col md-grid-2col sm-grid-1col xs-grid-1col gutter-extra-large">
-                        <li class="grid-sizer"></li>
+                        <li class="grid-sizer">
+                        </li>
 
                         <li class="grid-item development transition-inner-all">
                             <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/courses-01.jpg" alt="">
+                                        <img src="images/course-01.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
@@ -357,7 +410,7 @@
                                         34999/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images\java-full-stack.png" alt="">
+                                        <img src="images" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
                                                 class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Full Stack
@@ -395,12 +448,12 @@
                             </div>
                         </li>
 
-                        <li class="grid-item design transition-inner-all">
+                        <li class="grid-item development transition-inner-all">
                             <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/courses-02.jpg" alt="">
+                                        <img src="images/course-03.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
@@ -409,7 +462,7 @@
                                         14999/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images\Front-End.webp" alt="">
+                                        <img src="images" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
                                                 class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Front-End DEV
@@ -446,12 +499,12 @@
                                 </div>
                         </li>
 
-                        <li class="grid-item development transition-inner-all">
+                        <li class="grid-item cloud transition-inner-all">
                             <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/courses-03.jpg" alt="">
+                                        <img src="images/course-02.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
@@ -460,12 +513,10 @@
                                         34999/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images\awsdevops.png" alt="">
+                                        <img src="images" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>DevOps with
-                                                    AWS
-                                                    (30+ Tools&Services)</b></a>
+                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Professional Skills</b></a>
                                         </div>
                                         <!--<div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -499,7 +550,7 @@
                             </div>
                         </li>
 
-                        <li class="grid-item Professional transition-inner-all">
+                    <!--<li class="grid-item Professional transition-inner-all">
                             <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
                                 style="text-align: center;">
                                 <div class="image">
@@ -513,14 +564,12 @@
                                         999/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images\soft.png" alt="">
+                                        <img src="images" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Interview
-                                                    Prep KIT
-                                                    & ATS Friendly Resume</b></a>
+                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Data Science</b></a>
                                         </div>
-                                        <!--<div class="align-items-center">
+                                        !--<div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                                 fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -540,7 +589,7 @@
                                                 <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
                                                 </div>
                                             </div>
-                                        </div>-->
+                                        </div>--
                                     </div>
                                     <div
                                         class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
@@ -550,9 +599,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li>-->
 
-                        <li class="grid-item professional transition-inner-all">
+                        <!--<li class="grid-item professional transition-inner-all">
                             <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
                                 style="text-align: center;">
                                 <div class="image">
@@ -566,14 +615,12 @@
                                         499/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images/resume.png" alt="">
+                                        <img src="images" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Customized
-                                                    ATS
-                                                    Friendly Resume</b></a>
+                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>AI/Testing</b></a>
                                         </div>
-                                        <!--  <div class="align-items-center">
+                                        !--  <div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                                 fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -593,7 +640,7 @@
                                                 <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
                                                 </div>
                                             </div>
-                                        </div>-->
+                                        </div>--
                                     </div>
                                     <div
                                         class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
@@ -604,9 +651,8 @@
 
                                 </div>
                             </div>
-                        </li>
-
-                        <li class="grid-item development transition-inner-all">
+                        </li>-->
+                        <!--<li class="grid-item development transition-inner-all">
                             <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
                                 style="text-align: center;">
                                 <div class="image">
@@ -620,14 +666,12 @@
                                         34999/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images\python-full-stack.png" alt="">
+                                        <img src="images\python-full-stac.png" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Full Stack
-                                                    (python
-                                                    with Django)</b></a>
+                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Aws With DevOps</b></a>
                                         </div>
-                                        <!--<div class="align-items-center">
+                                        !--<div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                                 fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -647,7 +691,7 @@
                                                 <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
                                                 </div>
                                             </div>
-                                        </div>-->
+                                        </div>--
                                     </div>
                                     <div
                                         class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
@@ -657,7 +701,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li>-->
+
                     </ul>
                 </div>
             </div>
@@ -807,7 +852,7 @@
                     class="col-12 position-absolute top-0 h-100 d-flex justify-content-center align-items-center left-0px z-index-1 text-center">
                     <h4
                         class="alt-font text-dark-gray fs-45 fw-600 ls-minus-2px xs-ls-minus-1px mb-0 mt-40px xs-mt-15px">
-                        Offline learning wherever and whenever.</h4>
+                        Offline learning—real interaction, real mentors, real results.</h4>
                 </div>
             </div>
         </div>
@@ -1289,7 +1334,7 @@
                 </div>
                 <div class="col-xxl-4 col-md-5 text-center text-md-end"
                     data-anime="{ &quot;translateX&quot;: [-50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <a href="compiler.html"
+                    <a href="about.html"
                         class="btn btn-link btn-hover-animation-switch btn-extra-large text-dark-gray fw-600">
                         <span>
                             <span class="btn-text">Explore all articles</span>
@@ -1660,10 +1705,9 @@
 
 
                 <div class="col-xl-5 last-paragraph-no-margin text-center text-xl-end">
-                    <p class="fs-16">&copy; 2024 Crafto is Proudly Powered by <a href="https://www.themezaa.com/"
-                            target="_blank" class="text-white text-decoration-line-bottom">ThemeZaa</a></p>
+                    <p class="fs-15">&copy; Copyright © 2025 All rights reserved | VANGROVE TECH Pvt.Ltd. <!--<a href="https://www.themezaa.com/"
+                            target="_blank" class="text-white text-decoration-line-bottom">ThemeZaa</a>--></p>
                 </div>
-
             </div>
         </div>
     </footer>

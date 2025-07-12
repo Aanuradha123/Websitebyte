@@ -24,6 +24,67 @@
     <link rel="stylesheet" href="css/responsive.min.css">
     <link rel="stylesheet" href="demos/elearning/elearning.css">
 </head>
+<style>
+    .custom-swiper-nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .custom-swiper-button-prev,
+    .custom-swiper-button-next {
+        background-color: #ffcc00;
+        /* yellow */
+        color: #000;
+        /* black text */
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-swiper-button-prev:hover,
+    .custom-swiper-button-next:hover {
+        background-color: #ffa500;
+        /* darker orange */
+        color: #fff;
+    }
+</style>
+<style>
+    .swiper-slide img {
+        width: 243px;
+        height: 243px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .swiper-slide .text-center {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .swiper-slide {
+        height: 100%;
+        min-height: 360px; /* Adjust this to control uniform box height */
+        display: flex;
+        align-items: stretch;
+    }
+
+    .swiper-slide > div {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
+
 
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="modern" data-mobile-nav-bg-color="#313e3b">
 
@@ -153,183 +214,167 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-3px mb-0">We providing the best online courses.
-                    </h2>
+                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-3px mb-0">Upgrade Your Skills with On-Site
+                        Courses.</h2>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-10 offset-xl-1 text-center text-lg-start last-paragraph-no-margin"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;:0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <span class="fw-600 mb-5px text-dark-gray d-block fs-18">Online courses from the world's leading
-                        experts.</span>
-                    <p class="w-85 xl-w-95 lg-w-100">Lorem ipsum is simply dummy of the printing and typesetting
-                        industry lorem ipsum has the industry standard dummy.</p>
+                    <span class="fw-600 mb-5px text-dark-gray d-block fs-18">Hands-On Learning with Expert
+                        Instructors.</span>
+                    <p class="w-85 xl-w-95 lg-w-100">Step into engaging class modules built for long-term growth and
+                        mastery.
+                        Each lesson is taught by instructors committed to your progress.
+
+                    </p>
                 </div>
             </div>
-            <div class="row g-0 row-cols-1 row-cols-lg-4 row-cols-sm-2 g-0 align-items-center mb-3"
-                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;:0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
 
-                <div
-                    class="col services-box-style-07 text-center last-paragraph-no-margin border-end border-color-transparent-dark-very-light md-mb-50px xs-border-end-0">
-                    <div class="pe-50px ps-50px pb-40px xl-ps-30px xl-pe-30px">
-                        <div class="position-relative ms-auto me-auto mb-25px">
-                            <img src="images/about-icon-01.png" class="h-75px position-relative z-index-1 mt-35px"
-                                alt="">
-                            <div
-                                class="h-100px w-100px rounded-circle bg-very-light-gray position-absolute top-0 start-50 translate-middle-x">
+            <!-- BEGIN SLIDER WRAPPER -->
+            <div class="position-relative">
+                <!-- Swiper -->
+                <div class="swiper activity-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Activity 1–10 -->
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Group Discussions.png"  class="mb-3" alt="Group Discussions">
+                                <h6 class="fw-600 text-dark-gray mb-2">Group Discussions</h6>
+                                <p class="mb-0 lh-28">Collaborate and share insights with peers face-to-face.</p>
                             </div>
                         </div>
-                        <span class="fs-18 fw-600 text-dark-gray d-block mb-5px">Skilled instructors</span>
-                        <p class="lh-30">Best classroom module platform for professional courses.</p>
-                    </div>
-                    <div class="d-flex flex-column overflow-hidden w-100 justify-content-center position-relative">
-                        <div
-                            class="fs-14 fw-700 text-uppercase text-dark-gray border-top border-bottom border-color-transparent-dark-very-light pt-10px pb-10px ">
-                            <span class="text-down d-block">Student enrolled</span>
-                        </div>
-                        <div class="btn-hover d-flex align-items-center justify-content-center bg-dark-gray">
-                            <a href="instructors.html"
-                                class="inner-link btn btn-link btn-hover-animation-switch btn-extra-large text-white">
-                                <span>
-                                    <span class="btn-text">Great instructors</span>
-                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div
-                    class="col services-box-style-07 text-center last-paragraph-no-margin border-end border-color-transparent-dark-very-light md-mb-50px md-border-end-0">
-                    <div class="pe-50px ps-50px pb-40px xl-ps-30px xl-pe-30px">
-                        <div class="position-relative ms-auto me-auto mb-25px">
-                            <img src="images/about-icon-02.png" class="h-75px position-relative z-index-1 mt-35px"
-                                alt="">
-                            <div
-                                class="h-100px w-100px rounded-circle bg-very-light-gray position-absolute top-0 start-50 translate-middle-x">
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Practical Workshops.jpg"  class="mb-3" alt="Practical Workshops" >
+                                <h6 class="fw-600 text-dark-gray mb-2">Practical Workshops</h6>
+                                <p class="mb-0 lh-28">Hands-on learning with guided experiments and activities.</p>
                             </div>
                         </div>
-                        <span class="fs-18 fw-600 text-dark-gray d-block mb-5px">Educator helps</span>
-                        <p class="lh-30">Best online platform for professional courses.</p>
-                    </div>
-                    <div class="d-flex flex-column overflow-hidden w-100 justify-content-center position-relative">
-                        <div
-                            class="fs-14 fw-700 text-uppercase text-dark-gray border-top border-bottom border-color-transparent-dark-very-light pt-10px pb-10px ">
-                            <span class="text-down d-block">Satisfaction rate</span>
-                        </div>
-                        <div class="btn-hover d-flex align-items-center justify-content-center bg-dark-gray">
-                            <a href="testimonials.html"
-                                class="inner-link btn btn-link btn-hover-animation-switch btn-extra-large text-white">
-                                <span>
-                                    <span class="btn-text">Students feedback</span>
-                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div
-                    class="col services-box-style-07 text-center last-paragraph-no-margin border-end border-color-transparent-dark-very-light xs-mb-50px xs-border-end-0">
-                    <div class="pe-50px ps-50px pb-40px xl-ps-30px xl-pe-30px">
-                        <div class="position-relative ms-auto me-auto mb-25px">
-                            <img src="images/about-icon-03.png" class="h-75px position-relative z-index-1 mt-35px"
-                                alt="">
-                            <div
-                                class="h-100px w-100px rounded-circle bg-very-light-gray position-absolute top-0 start-50 translate-middle-x">
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="" class="mb-3" alt="Live Demos">
+                                <h6 class="fw-600 text-dark-gray mb-2">Live Demos</h6>
+                                <p class="mb-0 lh-28">Watch real-time demonstrations from expert instructors.</p>
                             </div>
                         </div>
-                        <span class="fs-18 fw-600 text-dark-gray d-block mb-5px">Get certificate</span>
-                        <p class="lh-30">Best online platform for professional courses.</p>
-                    </div>
-                    <div class="d-flex flex-column overflow-hidden w-100 justify-content-center position-relative">
-                        <div
-                            class="fs-14 fw-700 text-uppercase text-dark-gray border-top border-bottom border-color-transparent-dark-very-light pt-10px pb-10px ">
-                            <span class="text-down d-block">Student enrolled</span>
-                        </div>
-                        <div class="btn-hover d-flex align-items-center justify-content-center bg-dark-gray">
-                            <a href="courses.html"
-                                class="inner-link btn btn-link btn-hover-animation-switch btn-extra-large text-white">
-                                <span>
-                                    <span class="btn-text">Explore courses</span>
-                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col services-box-style-07 text-center last-paragraph-no-margin">
-                    <div class="pe-50px ps-50px pb-40px xl-ps-30px xl-pe-30px">
-                        <div class="position-relative ms-auto me-auto mb-25px">
-                            <img src="images/about-icon-04.png" class="h-75px position-relative z-index-1 mt-35px"
-                                alt="">
-                            <div
-                                class="h-100px w-100px rounded-circle bg-very-light-gray position-absolute top-0 start-50 translate-middle-x">
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Team Projects.jpg" class="mb-3" alt="Team Projects">
+                                <h6 class="fw-600 text-dark-gray mb-2">Team Projects</h6>
+                                <p class="mb-0 lh-28">Build collaborative solutions in a guided classroom setting.</p>
                             </div>
                         </div>
-                        <span class="fs-18 fw-600 text-dark-gray d-block mb-5px">Online classes</span>
-                        <p class="lh-30">Best online platform for professional courses.</p>
-                    </div>
-                    <div class="d-flex flex-column overflow-hidden w-100 justify-content-center position-relative">
-                        <div
-                            class="fs-14 fw-700 text-uppercase text-dark-gray border-top border-bottom border-color-transparent-dark-very-light pt-10px pb-10px ">
-                            <span class="text-down d-block">Top instructors</span>
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Brainstorming.png" class="mb-3" alt="Brainstorming">
+                                <h6 class="fw-600 text-dark-gray mb-2">Brainstorming</h6>
+                                <p class="mb-0 lh-28">Develop creative ideas with team-based activities.</p>
+                            </div>
                         </div>
-                        <div class="btn-hover d-flex align-items-center justify-content-center bg-dark-gray">
-                            <a href="courses.html"
-                                class="inner-link btn btn-link btn-hover-animation-switch btn-extra-large text-white">
-                                <span>
-                                    <span class="btn-text">Popular courses</span>
-                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                </span>
-                            </a>
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Peer Reviews.jpg" class="mb-3" alt="Peer Reviews">
+                                <h6 class="fw-600 text-dark-gray mb-2">Peer Reviews</h6>
+                                <p class="mb-0 lh-28">Give and receive feedback in real-time classroom settings.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Case Studies.webp" class="mb-3" alt="Case Studies">
+                                <h6 class="fw-600 text-dark-gray mb-2">Case Studies</h6>
+                                <p class="mb-0 lh-28">Explore real-world examples in depth with guided discussion.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Simulations.jpg" class="mb-3" alt="Simulations">
+                                <h6 class="fw-600 text-dark-gray mb-2">Simulations</h6>
+                                <p class="mb-0 lh-28">Practice skills in a safe, controlled, and realistic setup.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Role Playing.jpg" class="mb-3" alt="Role Playing">
+                                <h6 class="fw-600 text-dark-gray mb-2">Role Playing</h6>
+                                <p class="mb-0 lh-28">Engage in scenario-based activities to improve soft skills.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-center px-3 py-4 bg-white rounded shadow-sm h-100">
+                                <img src="images\Certification Prep.jpg" class="mb-3" alt="Certification Prep">
+                                <h6 class="fw-600 text-dark-gray mb-2">Certification Prep</h6>
+                                <p class="mb-0 lh-28">Practice and review in live sessions to prepare for exams.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                    <!-- Navigation Buttons -->
+                    <!-- Custom Navigation Buttons -->
+                    <div class="custom-swiper-nav text-center mt-4">
+                        <button class="custom-swiper-button-prev" aria-label="Previous">
+                            &#8592; Prev
+                        </button>
+                        <button class="custom-swiper-button-next" aria-label="Next">
+                            Next &#8594;
+                        </button>
+                    </div>
+
+
+                </div>
             </div>
+            <!-- END SLIDER -->
+
         </div>
+
         <div class="container-fluid">
             <div class="row position-relative mt-40px xs-mt-20px">
                 <div class="col swiper swiper-width-auto feather-shadow text-center"
                     data-slider-options="{ &quot;slidesPerView&quot;: &quot;auto&quot;, &quot;spaceBetween&quot;:80, &quot;centeredSlides&quot;: true, &quot;speed&quot;: 30000, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-2&quot;, &quot;clickable&quot;: false }, &quot;allowTouchMove&quot;: false, &quot;autoplay&quot;: { &quot;delay&quot;:0, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-four-slide-next-2&quot;, &quot;prevEl&quot;: &quot;.slider-four-slide-prev-2&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
                     <div class="swiper-wrapper marquee-slide">
-
                         <div class="swiper-slide">
                             <div class="fs-190 ls-minus-10px pt-10px pb-10px alt-font fw-600 opacity-1">providing
                                 amazing online</div>
                         </div>
-
-
                         <div class="swiper-slide">
                             <div class="fs-190 ls-minus-10px pt-10px pb-10px alt-font fw-600 opacity-1">courses bringing
                                 you</div>
                         </div>
-
-
                         <div class="swiper-slide">
                             <div class="fs-190 ls-minus-10px pt-10px pb-10px alt-font fw-600 opacity-1">outstanding
                                 online learning</div>
                         </div>
-
                     </div>
                 </div>
                 <div
                     class="col-12 position-absolute top-0 h-100 d-flex justify-content-center align-items-center left-0px z-index-1 text-center">
                     <h4
                         class="alt-font text-dark-gray fs-45 fw-600 ls-minus-2px xs-ls-minus-1px mb-0 mt-40px xs-mt-15px">
-                        Online learning wherever and whenever.</h4>
+                        Offline learning—real interaction, real mentors, real results.
+                    </h4>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.activity-slider', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.custom-swiper-button-next',
+                prevEl: '.custom-swiper-button-prev',
+            },
+            loop: false,
+            allowTouchMove: false,
+            breakpoints: {
+                1200: { slidesPerView: 4 },
+                992: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
+                576: { slidesPerView: 1 }
+            }
+        });
+    </script>
 
     <section class="bg-gradient-tranquil-white pt-0 position-relative align-items-center">
         <div class="container">
@@ -700,8 +745,8 @@
 
 
                 <div class="col-xl-5 last-paragraph-no-margin text-center text-xl-end">
-                    <p class="fs-16">&copy; 2024 Crafto is Proudly Powered by <a href="https://www.themezaa.com/"
-                            target="_blank" class="text-white text-decoration-line-bottom">ThemeZaa</a></p>
+                    <p class="fs-15">&copy; Copyright © 2025 All rights reserved | VANGROVE TECH Pvt.Ltd. <!--<a href="https://www.themezaa.com/"
+                            target="_blank" class="text-white text-decoration-line-bottom">ThemeZaa</a>--></p>
                 </div>
 
             </div>
