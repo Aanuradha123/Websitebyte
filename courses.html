@@ -72,6 +72,11 @@
     <header>
 
         <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="light">
+            <style>
+                .navbar {
+                    background-color: #000 !important;
+                }
+            </style>
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
                     <a class="navbar-brand" href="index.html">
@@ -96,7 +101,8 @@
                                 <a href="courses.html" class="nav-link">Courses</a>
                                 <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                
+                            </li><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li>
                                         <a href="course-detail.html"><i class="bi bi-laptop"></i>
                                             <div class="submenu-icon-content">
@@ -105,32 +111,23 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <!--<li>
-                                        <a href="course-detail.html"><i class="bi bi-briefcase"></i>
-                                            <div class="submenu-icon-content">
-                                                <span>Business</span>
-                                                <p>Advance your business</p>
-                                            </div>
-                                        </a>
-                                    </li>-->
                                     <li>
-                                        <a href="course-detail.html"><i class="bi bi-vector-pen"></i>
+                                        <a href="cloud-course-detail.html"><i class="bi bi-cloud"></i>
                                             <div class="submenu-icon-content">
-                                                <span>Design</span>
-                                                <p>Design skills & concepts</p>
+                                                <span>Cloud</span>
+                                                <p>Master cloud platforms and tools</p>
                                             </div>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="course-detail.html"><i class="bi bi-megaphone"></i>
+                                        <a href="data-analytics-detail.html"><i class="bi bi-bar-chart-line"></i>
                                             <div class="submenu-icon-content">
-                                                <span>professional skills</span>
-                                                <p>soft skills </p>
+                                                <span>Data & Analytics</span>
+                                                <p>Turn raw data into insights</p>
                                             </div>
                                         </a>
                                     </li>
                                 </ul>
-                            </li>
                             <!--<li class="nav-item"><a href="instructors.html" class="nav-link">Instructors</a></li>-->
                             <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonial</a></li>
                             <li class="nav-item"><a href="compiler.html" class="nav-link">Blog</a></li>
@@ -155,7 +152,34 @@
 
 
     <section class="ipad-top-space-margin bg-dark-gray cover-background page-title-big-typography"
-        style="background-image: url(images/courses-title-bg.jpg)">
+        id="courses-bg-slider-section">
+        <style>
+            #courses-bg-slider-section {
+                position: relative;
+                min-height: 400px;
+                overflow: hidden;
+            }
+            .courses-bg-slider-img {
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%; height: 100%;
+                object-fit: cover;
+                opacity: 0;
+                transition: opacity 1s ease;
+                z-index: 0;
+            }
+            .courses-bg-slider-img.active {
+                opacity: 1;
+                z-index: 1;
+            }
+            #courses-bg-slider-section .container, #courses-bg-slider-section .background-position-center-top {
+                position: relative;
+                z-index: 2;
+            }
+        </style>
+        <img src="images/coursebgimg1.png" class="courses-bg-slider-img active" alt="Course Background 1">
+        <img src="images/coursebgimg2.jpeg" class="courses-bg-slider-img" alt="Course Background 2">
+        <img src="images/coursebgimg3.jpeg" class="courses-bg-slider-img" alt="Course Background 3">
         <div class="background-position-center-top h-100 w-100 position-absolute left-0px top-0"
             style="background-image: url('images/vertical-line-bg-small.svg')"></div>
         <div id="particles-style-01" class="h-100 position-absolute left-0px top-0 w-100" data-particle="true"
@@ -170,6 +194,18 @@
                 </div>
             </div>
         </div>
+        <script>
+            // Simple background slider for courses section
+            (function() {
+                var imgs = document.querySelectorAll('#courses-bg-slider-section .courses-bg-slider-img');
+                var idx = 0;
+                setInterval(function() {
+                    imgs[idx].classList.remove('active');
+                    idx = (idx + 1) % imgs.length;
+                    imgs[idx].classList.add('active');
+                }, 3500);
+            })();
+        </script>
     </section>
 
 
@@ -189,13 +225,13 @@
                         class="portfolio-filter fw-500 nav nav-tabs justify-content-center justify-content-xl-end border-0">
                         <li class="nav active"><a data-filter="*" href="#">All</a></li>
                         <li class="nav"><a data-filter=".development" href="#">Development</a></li>
-                        <li class="nav"><a data-filter=".database" href="#">Database</a></li>
-                        <li class="nav"><a data-filter=".Professional" href="#">Professional Skills</a></li>
                         <li class="nav"><a data-filter=".cloud" href="#">Cloud</a></li>
-                        <li class="nav"><a data-filter=".testing" href="#">Testing</a></li>
                         <li class="nav"><a data-filter=".analytics" href="#">Data & Analytics</a></li>
+                        <!--<li class="nav"><a data-filter=".database" href="#">Database</a></li>
+                        <li class="nav"><a data-filter=".Professional" href="#">Professional Skills</a></li>
+                        <li class="nav"><a data-filter=".testing" href="#">Testing</a></li>
                         <li class="nav"><a data-filter=".security" href="#">security</a></li>
-                        <li class="nav"><a data-filter=".others" href="#">others</a></li>
+                        <li class="nav"><a data-filter=".others" href="#">others</a></li>-->
 
                     </ul>
                 </div>
@@ -211,7 +247,7 @@
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/course-img1.png" alt="">
+                                        <img src="images\course-01.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
@@ -263,20 +299,19 @@
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/course-img2.jpg" alt="">
+                                        <img src="images\course-02.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
                                     <div
                                         class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        14999/-</div>
+                                        34999/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
                                         <img src="" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Front-End DEV
-                                                    (React.js)</b></a>
+                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Full Stack Python With Gen AI</b></a>
                                         </div>
                                         <!--<div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -314,7 +349,7 @@
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/course-img3.png" alt="">
+                                        <img src="images\course-03.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
@@ -327,8 +362,7 @@
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
                                                 class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>DevOps with
-                                                    AWS
-                                                    (30+ Tools&Services)</b></a>
+                                                    AWS</b></a>
                                         </div>
                                         <!--<div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -362,71 +396,18 @@
                             </div>
                         </li>
 
-                        <li class="grid-item Professional transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/course-img4.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Interview
-                                                    Prep KIT
-                                                    & ATS Friendly Resume</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
                         <li class="grid-item analytics transition-inner-all">
                             <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images\course-img5.webp" alt="">
+                                        <img src="images\course-04.webp" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
                                     <div
                                         class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        499/-</div>
+                                        39999/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
                                         <img src="images" alt="">
@@ -471,7 +452,7 @@
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
+                                        <img src="images\course-06.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
@@ -483,7 +464,7 @@
                                         <img src="images" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Testing</b></a>
+                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>QA-Automation Testing</b></a>
                                         </div>
                                         <!--<div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -517,378 +498,24 @@
                             </div>
                         </li>
 
-                        <li class="grid-item  database transition-inner-all">
+                        <li class="grid-item  analytics transition-inner-all">
                             <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
+                                        <img src="images\course-05.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
                                     <div
                                         class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
+                                        29999/-</div>
                                     <div
                                         class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
                                         <img src="images" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>SQL</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item  security transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Cyber Security</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item professional transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-02.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        14999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Aptitude Class</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Amazon (FrontEnd) Ex.</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                        </li>
-
-                        <li class="grid-item others transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-02.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        14999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>.NET</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Amazon (FrontEnd) Ex.</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                        </li>
-
-                        <li class="grid-item development transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-02.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        14999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Python Full Stack(djongo)</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Amazon (FrontEnd) Ex.</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                        </li>
-
-                        <li class="grid-item cloud transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-03.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Azure</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">RAHUL 5+yrs</span><br>
-                                            <span style="color: #036d58;"><b>HCL(FS) Ex.</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item Professional transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-04.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Soft Skills</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item analytics transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-05.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        499/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Power BI</b></a>
+                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Data Analyst</b></a>
                                         </div>
                                         <!--<div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -927,7 +554,7 @@
                                 style="text-align: center;">
                                 <div class="image">
                                     <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
+                                        <img src="images\course-07.png" alt="" style="width:300px;height:200px;object-fit:cover;">
                                     </a>
                                 </div>
                                 <div class="bg-white position-relative">
@@ -939,616 +566,7 @@
                                         <img src="images" alt="">
                                         <div class="d-flex align-items-center mb-5px">
                                             <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>ETL Testing</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item  database transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Mongo DB</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="grid-item  security transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>RPA</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item professional transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-02.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        14999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Development</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Amazon (FrontEnd) Ex.</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                        </li>
-
-                        <li class="grid-item development transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-02.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        14999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Node.Js</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Amazon (FrontEnd) Ex.</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                        </li>
-
-                        <li class="grid-item cloud transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-03.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Cloud</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">RAHUL 5+yrs</span><br>
-                                            <span style="color: #036d58;"><b>HCL(FS) Ex.</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item Professional transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-04.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Linked In & Naukri optimization</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item development transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-05.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        499/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>javascript</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item  testing transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>AI/Testing Tools</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item  database transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Oracle</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="grid-item  testing transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>API Testing</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Expert at Resume Building</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="grid-item others transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-02.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        14999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>SAP</b></a>
-                                        </div>
-                                        <!--<div class="align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                                <path fill-rule="evenodd"
-                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                            </svg>
-                                            <span class="fs-18 align-items-center">KRISHNA 8+yrs</span><br>
-                                            <span style="color: #036d58;"><b>Amazon (FrontEnd) Ex.</b></span>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="padding-left: 27%;">
-                                            <div class="d-inline-block me-auto">
-                                                <div class="review-star-icon float-start">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                        class="bi bi-star-fill"></i>
-                                                </div>
-                                                <div class="fs-15 float-start ms-5px position-relative top-2px">(5.0)
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-center align-items-center ps-35px pe-35px xl-ps-20px xl-pe-20px pt-15px pb-20px">
-                                        <div class="w-100 text-center">
-                                            <a href="#" class="btn btn-primary fw-500 fs-16">Enroll Now!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                        </li>
-                        
-                        <li class="grid-item  testing transition-inner-all">
-                            <div class="services-box-style-06 border-radius-6px hover-box overflow-hidden box-shadow-large"
-                                style="text-align: center;">
-                                <div class="image">
-                                    <a href="course-detail.html">
-                                        <img src="images/courses-06.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="bg-white position-relative">
-                                    <div
-                                        class="bg-dark-gray w-80px h-80px md-w-75px md-h-75px rounded-circle d-flex justify-content-center align-items-center fw-500 text-white fs-20 position-absolute right-30px top-minus-40px">
-                                        34999/-</div>
-                                    <div
-                                        class="ps-35px pe-35px pt-30px pb-30px xl-ps-25px xl-pe-25px border-bottom border-color-transparent-dark-very-light">
-                                        <img src="images" alt="">
-                                        <div class="d-flex align-items-center mb-5px">
-                                            <a href="course-detail.html"
-                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>Selenium</b></a>
+                                                class="text-dark-gray fw-600 fs-19 md-fs-20 lh-28 w-90"><b>QA-Manual Testing</b></a>
                                         </div>
                                         <!--<div class="align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -1584,7 +602,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row mt-4">
+           <!-- <div class="row mt-4">
                 <div class="col-12 d-flex justify-content-center">
 
                     <ul class="pagination pagination-style-01 fs-13 mb-0 fw-500">
@@ -1599,7 +617,7 @@
                     </ul>
 
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
     <script>
